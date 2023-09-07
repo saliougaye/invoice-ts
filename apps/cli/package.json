@@ -6,7 +6,16 @@
     "dev": "tsx src/index.ts"
   },
   "devDependencies": {
+    "@types/inquirer": "^9.0.3",
+    "@types/node": "^20.5.9",
+    "@types/validator": "^13.11.1",
     "tsx": "^3.12.8",
     "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "@inquirer/prompts": "^3.0.4",
+    "commander": "^11.0.0",
+    "dayjs": "^1.11.9",
+    "validator": "^13.11.0"
   }
 }
