@@ -1,12 +1,21 @@
 {
   "name": "@invoice-ts/server",
-  "main": "src/index.ts",
+  "main": "src/api/serverless.ts",
   "type": "module",
   "scripts": {
-    "dev": "tsx src/index.ts"
+    "start": "vercel dev",
+    "preinstall": "prisma generate",
+    "build": "tsc -p tsconfig.json"
   },
   "devDependencies": {
+    "fastify-print-routes": "^2.1.0",
     "tsx": "^3.12.8",
-    "typescript": "^5.2.2"
+    "typescript": "^5.2.2",
+    "vercel": "^32.2.0"
+  },
+  "dependencies": {
+    "@prisma/client": "5.2.0",
+    "fastify": "^4.22.2",
+    "prisma": "^5.2.0"
   }
 }
